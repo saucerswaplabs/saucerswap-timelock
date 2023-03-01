@@ -84,7 +84,7 @@ contract TokenTimeLock is SafeHederaTokenService, Ownable {
     /**
      * @dev Release the tokens that have already vested.
      *
-     * Emits a {TokensReleased} event.
+     * Emits a {Released} event.
      */
     function release() external returns (uint256) {
         uint256 time = (block.timestamp);

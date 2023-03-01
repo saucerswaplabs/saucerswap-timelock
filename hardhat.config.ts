@@ -6,33 +6,6 @@ import "@hashgraph/hardhat-hethers";
 import 'hardhat-typechain'
 import * as config from './config';
 
-const LOW_OPTIMIZER_COMPILER_SETTINGS = {
-  version: '0.8.12',
-  settings: {
-    optimizer: {
-      enabled: true,
-      runs: 2_000,
-    },
-    metadata: {
-      bytecodeHash: 'none',
-    },
-  },
-}
-
-const LOWEST_OPTIMIZER_COMPILER_SETTINGS = {
-  version: '0.8.12',
-  settings: {
-    viaIR: true,
-    optimizer: {
-      enabled: true,
-      runs: 1_000,
-    },
-    metadata: {
-      bytecodeHash: 'none',
-    },
-  },
-}
-
 const DEFAULT_COMPILER_SETTINGS = {
   version: '0.8.12',
   settings: {
@@ -52,7 +25,7 @@ export default {
 		networks: config.networks,
 		gasLimit: 2_000_000
 	},
-  defaultNetwork: 'testnet', // testnet
+  defaultNetwork: 'testnet',
   mocha: {
     timeout: 100000000
   },

@@ -31,7 +31,6 @@ export const networks: NetworksUserConfig = {
 		mirrorNodeUrl: 'https://testnet.mirrornode.hedera.com',
 		accounts: [
 			{
-				// testnet account ID and private key go here
 				"account": process.env.TESTNET_MYACCOUNTID,
 				"privateKey": process.env.TESTNET_MYPRIVATEKEY
 			},

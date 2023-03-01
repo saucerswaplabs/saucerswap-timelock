@@ -4,7 +4,7 @@ Repository to deploy a token timelock smart contract onto the Hedera Network.
 
 ## Installation
 
-Clone the repository and run `npm install`
+Clone the repository and run `npm install` <br>
 Compile using hardhat command `npx hardhat compile`
 
 ## Unit Test
