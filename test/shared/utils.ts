@@ -1,17 +1,12 @@
 
 
 import { AccountId, Client, Key, PrivateKey, TokenAssociateTransaction, TokenCreateTransaction, TokenId, TokenSupplyType, TokenType, TransferTransaction } from "@hashgraph/sdk";
-import { BigNumber as BigNumberJs } from 'bignumber.js'
 import axios from 'axios';
 
 export const DEFAULT_DECIMAL = 8
 export const BASE_TEN = 10
 
 export namespace Utils {
-
-    export function expandToDecimalsJs(n: number, decimals: number = 8): BigNumberJs {
-        return new BigNumberJs(n).multipliedBy(new BigNumberJs(BASE_TEN).pow(decimals))
-    }
 
     export async function createToken(
         name: string, 

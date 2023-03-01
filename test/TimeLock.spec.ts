@@ -4,7 +4,6 @@ import { solidity } from 'ethereum-waffle'
 import { TokenId, TokenSupplyType } from '@hashgraph/sdk'
 import { Contract, Wallet } from '@hashgraph/hethers'
 import { hethers } from 'hardhat'
-import { BigNumber as BigNumberJs } from 'bignumber.js'
 import EnvContainer from './shared/EnvContainer'
 import { Utils } from "./shared/utils";
 import { timelockFixture } from './shared/fixtures'
