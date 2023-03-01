@@ -2,17 +2,17 @@
 
 Repository to deploy a token timelock smart contract onto the Hedera Network.
 
-# Installation
+## Installation
 
-clone the repository and run npm install
-compile using hardhat command npx hardhat compile
+Clone the repository and run `npm install`
+Compile using hardhat command `npx hardhat compile`
 
-# Unit Test
+## Unit Test
 
-create a .env file in the root directory
-create two accounts with ECDSA keys and fill in the .env file with sample-env as a guide
-run the unit test from the root directory with command npx hardhat test test/TimeLock.spec.ts
+Create a .env file in the root directory <br>
+Create two accounts with ECDSA keys and fill in the .env file with sample-env as a guide <br>
+Run the unit test from the root directory with command `npx hardhat test test/TimeLock.spec.ts`
 
-# Deploy
+## Deploy
 
-run the deploy script from the root directory with command npx ts-node scripts/deploy.ts
+Run the deploy script from the root directory with command `npx ts-node scripts/deploy.ts`
