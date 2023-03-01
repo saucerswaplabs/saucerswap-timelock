@@ -113,7 +113,6 @@ describe('Token TimeLock', () => {
 
             const balAliceAfter = await Utils.getTokenBalanceForId(env.aliceId.toString(), _tokenAddr.toString(), network);
             const balContractAfter = await Utils.getTokenBalanceForId(timelock.address.toString(), _tokenAddr.toString(), network);
-
             
             expect(balAliceBefore.toString()).to.equal('0')
             expect(balContractBefore.toString()).to.equal(initAmount.toString())
