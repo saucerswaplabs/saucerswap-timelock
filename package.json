@@ -1,0 +1,59 @@
+{
+  "name": "saucerswap-timelock",
+  "version": "1.0.0",
+  "description": "token timelock contracts for Hedera",
+  "repository": {
+    "type": "git",
+    "url": "saucerswap-timelock"
+  },
+  "keywords": [
+    "timelock",
+    "hedera",
+    "OpenZeppelin"
+  ],
+  "author": "littletarzan",
+  "license": "MIT",
+  "files": [
+    "contracts",
+    "build"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "@hashgraph/hardhat-hethers": "^1.0.4",
+    "@hashgraph/hethers": "^1.2.6",
+    "@hashgraph/sdk": "^2.17.1",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@typechain/ethers-v5": "^4.0.0",
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "decimal.js": "^10.2.1",
+    "dotenv": "^8.6.0",
+    "ethereum-waffle": "^3.0.2",
+    "ethers": "^5.0.8",
+    "hardhat": "^2.9.6",
+    "hardhat-typechain": "^0.3.5",
+    "mocha": "^6.2.2",
+    "prettier": "^2.0.5",
+    "prettier-plugin-solidity": "^1.0.0-beta.10",
+    "solhint": "^3.2.1",
+    "solhint-plugin-prettier": "^0.0.5",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^8.5.4",
+    "typechain": "^4.0.0",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "dependencies": {
+    "web3": "^1.7.1",
+    "hardhat-watcher": "^2.1.1",
+    "@openzeppelin/contracts": "4.6.0"
+  }
+}
