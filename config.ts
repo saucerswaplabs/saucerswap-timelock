@@ -39,5 +39,18 @@ export const networks: NetworksUserConfig = {
 				"privateKey": process.env.TESTNET_ALICE_PRIVATEKEY
 			}
 		]
+	},
+	mainnet: {
+		mirrorNodeUrl: 'https://mainnet-public.mirrornode.hedera.com',
+		accounts: [
+			{
+				"account": process.env.MAINNET_MYACCOUNTID,
+				"privateKey": process.env.MAINNET_MYPRIVATEKEY
+			},
+			{
+				"account": process.env.MAINNET_ALICE_ID,
+				"privateKey": process.env.MAINNET_ALICE_PRIVATEKEY
+			}
+		]
 	}
 };
